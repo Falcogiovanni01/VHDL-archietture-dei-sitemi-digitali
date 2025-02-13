@@ -1,0 +1,76 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity MUX8_1 is
+    Port (
+        S0 : in STD_LOGIC;
+        S1 : in STD_LOGIC;
+        S2 : in STD_LOGIC;
+        A0 : in STD_LOGIC;
+        A1 : in STD_LOGIC;
+        A2 : in STD_LOGIC;
+        A3 : in STD_LOGIC;
+        A4 : in STD_LOGIC;
+        A5 : in STD_LOGIC;
+        A6 : in STD_LOGIC;
+        A7 : in STD_LOGIC;
+        Y  : out STD_LOGIC
+    );
+end MUX8_1;
+
+architecture Behavioral of MUX8_1 is
+    -- Dichiarazione dei componenti
+    component MUX_2_1 is
+        Port (
+            A : in STD_LOGIC;
+            B : in STD_LOGIC;
+            S : in STD_LOGIC;
+            Y : out STD_LOGIC
+        );
+    end component;
+
+    component MUX_4_1 is
+        Port (
+            A0 : in STD_LOGIC;
+            A1 : in STD_LOGIC;
+            A2 : in STD_LOGIC;
+            A3 : in STD_LOGIC;
+            S0 : in STD_LOGIC;
+            S1 : in STD_LOGIC;
+            Y  : out STD_LOGIC
+        );
+    end component;
+
+    -- Segnali intermedi per collegare i MUX
+    signal mux0_out, mux1_out : STD_LOGIC;
+
+begin
+    -- Primo livello: due MUX_4_1
+    MUX0: MUX_4_1 port map (
+        A0 => A0,
+        A1 => A1,
+        A2 => A2,
+        A3 => A3,
+        S0 => S0,
+        S1 => S1,
+        Y  => mux0_out
+    );
+
+    MUX1: MUX_4_1 port map (
+        A0 => A4,
+        A1 => A5,
+        A2 => A6,
+        A3 => A7,
+        S0 => S0,
+        S1 => S1,
+        Y  => mux1_out
+    );
+
+    -- Secondo livello: MUX_2_1 finale
+    MUX2: MUX_2_1 port map (
+        A => mux0_out,
+        B => mux1_out,
+        S => S2,
+        Y => Y
+    );
+end Behavioral;
