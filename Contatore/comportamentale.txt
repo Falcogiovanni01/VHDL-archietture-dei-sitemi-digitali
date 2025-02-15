@@ -1,0 +1,60 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 15.02.2025 11:23:14
+-- Design Name: 
+-- Module Name: contatore - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL; -- Aggiunto per l'operazione di incremento
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity contatore is
+    Port ( clock : in STD_LOGIC;
+    -- 4 bit, dunque 2^4 =16 
+           Y : out STD_LOGIC_VECTOR(0 to 3);
+           reset : in STD_LOGIC
+    );
+end contatore;
+
+architecture Behavioral of contatore is
+
+-- SEGNALE TEMPORANEO : 
+signal temp : STD_LOGIC_VECTOR(0 TO 3); 
+
+begin
+process( clock, reset)
+   begin
+    if(clock = '1') then -- ASINCRONO, PERCHè NON HO MESSO CLOCK EVENT , quindi non varia in base 
+    -- all'evento ma varia a prescindere da se il clock è attivo o meno
+       temp <= std_logic_vector(unsigned(temp) + 1); 
+    elsif(reset ='1')then  
+       temp <= "0000" ; 
+    end if;
+   end process;
+    
+    Y <= temp; 
+end Behavioral;

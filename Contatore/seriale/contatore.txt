@@ -1,0 +1,82 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 15.02.2025 12:21:58
+-- Design Name: 
+-- Module Name: contatore - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity contatore is
+  Port (
+  clock : in STD_LOGIC;
+  y : out STD_LOGIC_VECTOR(0 to 2) -- MODULO 8 QUINDI 3 BIT
+    
+   );  
+end contatore;
+
+architecture Behavioral of contatore is
+  component flipflopD
+    Port (
+      d     : in  STD_LOGIC;
+      clock : in  STD_LOGIC;
+      y     : out STD_LOGIC
+    );
+  end component; 
+  
+  signal f1, f2, f3 : STD_LOGIC;
+  signal d1, d2, d3 : STD_LOGIC; -- Segnali intermedi per il complemento
+  
+begin
+d1 <= not f1;
+d2 <= not f2; 
+d3 <= not f3 ; -- NON MI ACCETTA NOT F1 IN PORT MAP
+ -- Istanza del primo flip-flop (LSB) 2_0
+  FF0: flipflopD port map (
+    d     => d1, -- Input D collegato all'uscita negata (per creare un flip-flop T)
+    clock => clock,  -- Clock principale
+    y     => f1      -- Uscita Q0
+  );
+
+  -- Istanza del secondo flip-flop 2_1
+  FF1: flipflopD port map (
+    d     => d2, -- Input D collegato all'uscita negata
+    clock => f1,     -- Clock dal primo flip-flop
+    y     => f2      -- Uscita Q1
+  );
+
+  -- Istanza del terzo flip-flop (MSB) 2_2
+  FF2: flipflopD port map (
+    d     => d3, -- Input D collegato all'uscita negata
+    clock => f2,     -- Clock dal secondo flip-flop
+    y     => f3      -- Uscita Q2
+  );
+
+  -- Assegnazione dell'uscita
+  y <= f3 & f2 & f1; -- Concatenazione delle uscite
+
+end Behavioral;
