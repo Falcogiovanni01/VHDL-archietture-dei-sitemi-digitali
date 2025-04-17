@@ -1,0 +1,115 @@
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 21.02.2025 15:44:13
+-- Design Name: 
+-- Module Name: cronometro - Structural
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
+
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.MATH_REAL.ALL;
+use IEEE.NUMERIC_STD.ALL;  
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity cronometro is
+ Port ( 
+  CLOCK_c : in std_logic;
+  reset_c : in std_logic; 
+  enable_c: in std_logic; -- enable cronometro; 
+  input : in std_logic_vector( 2 downto 0); -- per settare : ore minuti e secondi
+  set_c: in std_logic_vector( 5 downto 0); -- abbiamo inserito 1 caricamento che in 
+  -- base al "set aperto" setta il valore dei minuti, delle ore o dei secondi.
+  orario  : out std_logic_vector(16 downto 0); -- log2(24)+ log2(60) + log2(60) = 5+6+6=17;
+  div_c : out std_logic  -- QUANDO : raggiungi 23:59:59
+ );
+end cronometro;
+
+architecture Structural of cronometro is
+-- COMPONENTI :due contatori modulo 60 e 24
+ component cont_generic is 
+    generic(N : in integer); 
+    port(
+    clock : in std_logic;
+    reset : in std_logic;
+    load : in std_logic_vector((integer(ceil(log2(real(N))))-1) downto 0); 
+    enable_contatore : in std_logic;  
+    enable_caricamento: in std_logic; 
+    cont  : out std_logic_vector((integer(ceil(log2(real(N))))-1) downto 0);
+    div : out std_logic 
+    ); 
+    end component ; 
+ -- SEGNALE temporaneo che rappresenta "l'uscita div" di ogni contatore
+ signal div_temp : std_logic_vector( 2 downto 0) := (others=>'0'); 
+ -- 
+ signal uscite_and : std_logic_vector( 1 downto 0 ) := (others=>'0'); 
+    
+begin
+ 
+ cont_secondi : cont_generic 
+ Generic map ( N => 60 )
+ 
+ port map (
+   clock => CLOCK_c,
+   reset => reset_c,
+   load => set_c(5 downto 0),
+   enable_contatore => enable_c,
+   enable_caricamento =>input(0), 
+   cont  => orario( 5 downto 0), -- le prime 6 uscite
+   div => div_temp(0)
+   );
+   
+   uscite_and(0) <= CLOCK_c and div_temp(0) ; 
+
+ cont_minuti : cont_generic 
+ generic map ( N => 60)  
+ port map (
+   clock => uscite_and(0),
+   reset => reset_c,
+   load => set_c(5 downto 0),
+   enable_contatore => enable_c,
+   enable_caricamento =>input(1), 
+   cont  => orario( 11 downto 6), --  11
+   div => div_temp(1)
+   );
+   
+   uscite_and(1) <= uscite_and(0) and div_temp(1); 
+   
+   cont_ore : cont_generic 
+ generic map ( N => 24)  
+ port map (
+   clock => uscite_and(1),
+   reset => reset_c,
+   load => set_c(4 downto 0),
+   enable_contatore => enable_c,
+   enable_caricamento =>input(2), 
+   cont  => orario( 16 downto 12), -- ultime 5 uscite 
+   div => div_temp(2)
+   );
+   
+   div_c <= div_temp(2) and (div_temp(1) and div_temp(0));  
+   
+  
+
+end Structural;

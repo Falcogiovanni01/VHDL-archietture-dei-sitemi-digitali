@@ -1,0 +1,187 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Apr  3 11:51:18 2025
+| Host         : Lemauro running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Cronometro_board_control_sets_placed.rpt
+| Design       : Cronometro_board
+| Device       : xc7a50ti
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   109 |
+|    Minimum number of control sets                        |   109 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   727 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   109 |
+| >= 0 to < 4        |   102 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     5 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              33 |           17 |
+| No           | No                    | Yes                    |              42 |           36 |
+| No           | Yes                   | No                     |              96 |           51 |
+| Yes          | No                    | No                     |               6 |            2 |
+| Yes          | No                    | Yes                    |              30 |           30 |
+| Yes          | Yes                   | No                     |              66 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+------------------------------+------------------------------+------------------+----------------+--------------+
+|         Clock Signal        |         Enable Signal        |       Set/Reset Signal       | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------------+------------------------------+------------------------------+------------------+----------------+--------------+
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/input_cr_tmp_reg[2]_1     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/input_cr_tmp_reg[1]_7     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/input_cr_tmp_reg[0]_6     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/input_cr_tmp_reg[5]_3     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/input_cr_tmp_reg[1]_1     |                1 |              1 |         1.00 |
+|  CU/set_hms_cr_tmp_reg[0]_1 |                              | CU/input_cr_tmp_reg[2]_2     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/input_cr_tmp_reg[2]_4     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/input_cr_tmp_reg[3]_1     |                1 |              1 |         1.00 |
+|  CU/set_hms_cr_tmp_reg[2]_0 |                              | CU/input_cr_tmp_reg[2]_0     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/input_cr_tmp_reg[4]_1     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/input_cr_tmp_reg[4]_4     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/rst_cr_tmp_reg_2          |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/rst_cr_tmp_reg_0          |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[4]_8     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[1]_4     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[5]_0     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[2]_8     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[0]_1     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[1]_11    |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[3]_8     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[3]_4     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     | CU/enable_cr_tmp             | CU/set_hms_cr_tmp_reg[1]_0   |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[5]_5     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     | CU/enable_cr_tmp             | CU/set_hms_cr_tmp_reg[1]_1   |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   |                              | CU/input_cr_tmp_reg[0]_9     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   |                              | CU/input_cr_tmp_reg[2]_6     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   |                              | CU/input_cr_tmp_reg[4]_0     |                1 |              1 |         1.00 |
+|  CU/set_hms_cr_tmp_reg[1]_0 |                              | CU/rst_cr_tmp_reg_0          |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   |                              | CU/input_cr_tmp_reg[1]_9     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   |                              | CU/input_cr_tmp_reg[2]_0     |                1 |              1 |         1.00 |
+|  CU/set_hms_cr_tmp_reg[0]_0 |                              | CU/rst_cr_tmp_reg_1          |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   |                              | CU/input_cr_tmp_reg[3]_0     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   |                              | CU/input_cr_tmp_reg[1]_0     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   |                              | CU/input_cr_tmp_reg[4]_6     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[0]_0     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[2]_5     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[4]_5     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[1]_3     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[1]_8     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[3]_3     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[3]_6     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_min/clk1_out   | CU/enable_cr_tmp             | CU/set_hms_cr_tmp_reg[2]_0   |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/input_cr_tmp_reg[3]_2     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[5]_5   |                              | CU/input_cr_tmp_reg[5]_3     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/input_cr_tmp_reg[5]_2     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/input_cr_tmp_reg[1]_2     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/input_cr_tmp_reg[1]_6     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/input_cr_tmp_reg[0]_4     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/input_cr_tmp_reg[2]_3     |                1 |              1 |         1.00 |
+|  CU/set_hms_cr_tmp_reg[1]_1 |                              | CU/input_cr_tmp_reg[2]_1     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/input_cr_tmp_reg[2]_2     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/input_cr_tmp_reg[4]_2     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/input_cr_tmp_reg[4]_3     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/rst_cr_tmp_reg_3          |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/rst_cr_tmp_reg_1          |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[0]_2     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[3]_5     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[1]_5     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[3]_7     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[5]_1     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[5]_4     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[2]_7     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[1]_10    |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       | CU/enable_cr_tmp             | CU/input_cr_tmp_reg[4]_7     |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       | CU/enable_cr_tmp             | CU/set_hms_cr_tmp_reg[0]_1   |                1 |              1 |         1.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       | CU/enable_cr_tmp             | CU/set_hms_cr_tmp_reg[0]_0   |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[4]_8   |                              | CU/input_cr_tmp_reg[4]_4     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[0]_0   |                              | CU/input_cr_tmp_reg[0]_9     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[1]_4   |                              | CU/input_cr_tmp_reg[1]_1     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[0]_2   |                              | CU/input_cr_tmp_reg[0]_4     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[5]_0   |                              | CU/rst_cr_tmp_reg_2          |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[2]_5   |                              | CU/input_cr_tmp_reg[2]_6     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[3]_5   |                              | CU/input_cr_tmp_reg[4]_2     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[1]_5   |                              | CU/input_cr_tmp_reg[1]_2     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[3]_7   |                              | CU/input_cr_tmp_reg[3]_2     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[0]_3   |                              | CU/input_cr_tmp_reg[0]_10    |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[5]_1   |                              | CU/rst_cr_tmp_reg_3          |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[4]_5   |                              | CU/input_cr_tmp_reg[4]_6     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[5]_4   |                              | CU/input_cr_tmp_reg[5]_2     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[1]_3   |                              | CU/input_cr_tmp_reg[1]_0     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[1]_8   |                              | CU/input_cr_tmp_reg[1]_9     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[0]_7   |                              | CU/input_cr_tmp_reg[0]_8     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[2]_7   |                              | CU/input_cr_tmp_reg[2]_3     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[2]_8   |                              | CU/input_cr_tmp_reg[2]_4     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[0]_10  |                              | CU/input_cr_tmp_reg[0]_3     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[1]_10  |                              | CU/input_cr_tmp_reg[1]_6     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[0]_11  |                              | CU/input_cr_tmp_reg[0]_5     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[3]_3   |                              | CU/input_cr_tmp_reg[4]_0     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[3]_6   |                              | CU/input_cr_tmp_reg[3]_0     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[0]_5   |                              | CU/input_cr_tmp_reg[0]_11    |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[0]_1   |                              | CU/input_cr_tmp_reg[0]_6     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[1]_11  |                              | CU/input_cr_tmp_reg[1]_7     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[3]_8   |                              | CU/input_cr_tmp_reg[3]_1     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[0]_8   |                              | CU/input_cr_tmp_reg[0]_7     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[3]_4   |                              | CU/input_cr_tmp_reg[4]_1     |                1 |              1 |         1.00 |
+|  CU/input_cr_tmp_reg[4]_7   |                              | CU/input_cr_tmp_reg[4]_3     |                1 |              1 |         1.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/input_cr_tmp_reg[0]_11    |                1 |              2 |         2.00 |
+| ~CRONOM/cont_sec/p_0_in     |                              | CU/input_cr_tmp_reg[0]_5     |                1 |              2 |         2.00 |
+| ~CRONOM/cont_min/clk1_out   |                              | CU/input_cr_tmp_reg[0]_7     |                1 |              2 |         2.00 |
+| ~CRONOM/cont_min/clk1_out   |                              | CU/input_cr_tmp_reg[0]_8     |                1 |              2 |         2.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/input_cr_tmp_reg[0]_3     |                1 |              2 |         2.00 |
+| ~CLK_DIV_FREQ/CLK_OUT       |                              | CU/input_cr_tmp_reg[0]_10    |                1 |              2 |         2.00 |
+|  CLK_IBUF_BUFG              | CU/stato_corr_n_0            | BD2/btn_2_out_tmp            |                1 |              4 |         4.00 |
+|  CLK_IBUF_BUFG              | CU/input_cr_tmp[5]_i_1_n_0   |                              |                2 |              6 |         3.00 |
+|  CLK_IBUF_BUFG              |                              | CU/RST_CR                    |                7 |             28 |         4.00 |
+|  CLK_IBUF_BUFG              | BD1/deb.count[31]_i_2_n_0    | BD1/deb.count[31]_i_1_n_0    |                8 |             31 |         3.88 |
+|  CLK_IBUF_BUFG              | BD2/deb.count[31]_i_2__0_n_0 | BD2/deb.count[31]_i_1__0_n_0 |                8 |             31 |         3.88 |
+|  CLK_IBUF_BUFG              |                              | CLK_DIV_FREQ/clk_tmp         |                8 |             32 |         4.00 |
+|  CLK_IBUF_BUFG              |                              |                              |               17 |             33 |         1.94 |
++-----------------------------+------------------------------+------------------------------+------------------+----------------+--------------+
+
+

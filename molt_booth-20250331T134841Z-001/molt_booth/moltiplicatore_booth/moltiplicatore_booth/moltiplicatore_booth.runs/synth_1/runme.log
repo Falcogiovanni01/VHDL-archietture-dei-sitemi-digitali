@@ -1,0 +1,296 @@
+
+*** Running vivado
+    with args -log molt_booth.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source molt_booth.tcl
+
+
+ECHO disattivato.
+ECHO disattivato.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source molt_booth.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 511.418 ; gain = 221.504
+Command: read_checkpoint -auto_incremental -incremental D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/utils_1/imports/synth_1/mux_21.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/utils_1/imports/synth_1/mux_21.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top molt_booth -part xc7a12ticsg325-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12ti'
+WARNING: [Vivado_Tcl 4-1809] The reference checkpoint is from an old version of Vivado; A full resynthesis flow will be run
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20360
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 1329.617 ; gain = 440.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'molt_booth' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/molt_booth.vhd:17]
+INFO: [Synth 8-3491] module 'unita_controllo' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_controllo.vhd:7' bound to instance 'UC' of component 'unita_controllo' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/molt_booth.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'unita_controllo' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_controllo.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'unita_controllo' (0#1) [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_controllo.vhd:17]
+INFO: [Synth 8-3491] module 'unita_operativa' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_operativa.vhd:7' bound to instance 'UO' of component 'unita_operativa' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/molt_booth.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'unita_operativa' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_operativa.vhd:17]
+INFO: [Synth 8-3491] module 'registro8' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/registro8.vhd:6' bound to instance 'M_REG' of component 'registro8' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_operativa.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'registro8' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/registro8.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'registro8' (0#1) [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/registro8.vhd:14]
+	Parameter width bound to: 17 - type: integer 
+INFO: [Synth 8-3491] module 'mux_21' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/mux_21.vhd:7' bound to instance 'MUX_REG_INPUT' of component 'mux_21' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_operativa.vhd:99]
+INFO: [Synth 8-638] synthesizing module 'mux_21' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/mux_21.vhd:18]
+	Parameter width bound to: 17 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux_21' (0#1) [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/mux_21.vhd:18]
+INFO: [Synth 8-3491] module 'shift_register' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/shift_register.vhd:7' bound to instance 'SHIFT_REG' of component 'shift_register' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_operativa.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'shift_register' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/shift_register.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'shift_register' (0#1) [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/shift_register.vhd:16]
+INFO: [Synth 8-3491] module 'adder_sub' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/adder_sub.vhd:8' bound to instance 'ARITHMETIC_UNIT' of component 'adder_sub' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_operativa.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'adder_sub' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/adder_sub.vhd:17]
+INFO: [Synth 8-3491] module 'ripple_carry' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd:7' bound to instance 'adder' of component 'ripple_carry' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/adder_sub.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'ripple_carry' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd:16]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/full_adder.vhd:7' bound to instance 'FA0' of component 'full_adder' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'full_adder' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/full_adder.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'full_adder' (0#1) [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/full_adder.vhd:14]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/full_adder.vhd:7' bound to instance 'FA' of component 'full_adder' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd:36]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/full_adder.vhd:7' bound to instance 'FA' of component 'full_adder' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd:36]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/full_adder.vhd:7' bound to instance 'FA' of component 'full_adder' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd:36]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/full_adder.vhd:7' bound to instance 'FA' of component 'full_adder' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd:36]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/full_adder.vhd:7' bound to instance 'FA' of component 'full_adder' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd:36]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/full_adder.vhd:7' bound to instance 'FA' of component 'full_adder' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd:36]
+INFO: [Synth 8-3491] module 'full_adder' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/full_adder.vhd:7' bound to instance 'FA7' of component 'full_adder' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ripple_carry' (0#1) [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'adder_sub' (0#1) [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/adder_sub.vhd:17]
+INFO: [Synth 8-3491] module 'cont_mod8' declared at 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/cont_mod8.vhd:7' bound to instance 'ITERATION_COUNTER' of component 'cont_mod8' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_operativa.vhd:111]
+INFO: [Synth 8-638] synthesizing module 'cont_mod8' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/cont_mod8.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'cont_mod8' (0#1) [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/cont_mod8.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'unita_operativa' (0#1) [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_operativa.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'molt_booth' (0#1) [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/molt_booth.vhd:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1436.965 ; gain = 548.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1436.965 ; gain = 548.230
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 1436.965 ; gain = 548.230
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 1436.965 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-50T-Master.xdc]
+Finished Parsing XDC File [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-50T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/constrs_1/imports/digilent-xdc-master/Nexys-A7-50T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/molt_booth_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/molt_booth_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1543.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Impossibile trovare il percorso specificato.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1543.039 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:47 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:48 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'unita_controllo'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_controllo.vhd:33]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_controllo.vhd:33]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                          0000001 |                              000
+           acquisisci_op |                          0000010 |                              001
+                 wait_sr |                          0000100 |                              010
+              avvia_scan |                          0001000 |                              011
+             avvia_shift |                          0010000 |                              100
+                    fine |                          0100000 |                              110
+              incr_count |                          1000000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'unita_controllo'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/unita_controllo.vhd:33]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:49 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 24    
++---Registers : 
+	               17 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   17 Bit        Muxes := 2     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 2     
+	   7 Input    3 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
+	   7 Input    1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:54 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:01:03 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:01:03 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:01:03 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:01:11 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:01:11 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:01:11 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:01:11 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:01:11 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:01:11 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT2 |     4|
+|3     |LUT3 |     4|
+|4     |LUT4 |     9|
+|5     |LUT5 |    22|
+|6     |LUT6 |    11|
+|7     |FDRE |    34|
+|8     |FDSE |     1|
+|9     |LD   |     7|
+|10    |IBUF |    19|
+|11    |OBUF |    17|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:01:11 . Memory (MB): peak = 1543.039 ; gain = 654.305
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:59 . Memory (MB): peak = 1543.039 ; gain = 548.230
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:01:12 . Memory (MB): peak = 1543.039 ; gain = 654.305
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1543.039 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1543.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  LD => LDCE: 7 instances
+
+Impossibile trovare il percorso specificato.
+Synth Design complete | Checksum: 58b1b697
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:01:43 . Memory (MB): peak = 1543.039 ; gain = 1028.641
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.353 . Memory (MB): peak = 1543.039 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/ASDI/Rifai_es/tesina/molt_booth-20250331T134841Z-001/molt_booth/moltiplicatore_booth/moltiplicatore_booth/moltiplicatore_booth.runs/synth_1/molt_booth.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file molt_booth_utilization_synth.rpt -pb molt_booth_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 31 15:55:45 2025...

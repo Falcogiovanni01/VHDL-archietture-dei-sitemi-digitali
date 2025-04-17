@@ -1,0 +1,201 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Fri Mar  7 13:15:05 2025
+# Process ID: 9364
+# Current directory: D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.runs/synth_1
+# Command line: vivado.exe -log Mux16_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mux16_1.tcl
+# Log file: D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.runs/synth_1/Mux16_1.vds
+# Journal file: D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.runs/synth_1\vivado.jou
+# Running On: LAPTOP-1ES8J68V, OS: Windows, CPU Frequency: 2096 MHz, CPU Physical cores: 8, Host memory: 7448 MB
+#-----------------------------------------------------------
+source Mux16_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 477.094 ; gain = 181.363
+Command: read_checkpoint -auto_incremental -incremental D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/utils_1/imports/synth_1/MUX_2_1.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/utils_1/imports/synth_1/MUX_2_1.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Mux16_1 -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25180
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 925.012 ; gain = 439.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Mux16_1' [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux16_1.vhd:14]
+INFO: [Synth 8-3491] module 'Mux4_1' declared at 'D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_4_1.vhd:5' bound to instance 'MUX_4_1_1' of component 'MUX4_1' [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux16_1.vhd:33]
+INFO: [Synth 8-638] synthesizing module 'Mux4_1' [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_4_1.vhd:15]
+INFO: [Synth 8-3491] module 'MUX_2_1' declared at 'D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_2_1.vhd:5' bound to instance 'MUX0' of component 'MUX_2_1' [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_4_1.vhd:32]
+INFO: [Synth 8-638] synthesizing module 'MUX_2_1' [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_2_1.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'MUX_2_1' (0#1) [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_2_1.vhd:12]
+INFO: [Synth 8-3491] module 'MUX_2_1' declared at 'D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_2_1.vhd:5' bound to instance 'MUX1' of component 'MUX_2_1' [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_4_1.vhd:39]
+INFO: [Synth 8-3491] module 'MUX_2_1' declared at 'D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_2_1.vhd:5' bound to instance 'MUX2' of component 'MUX_2_1' [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_4_1.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'Mux4_1' (0#1) [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_4_1.vhd:15]
+INFO: [Synth 8-3491] module 'Mux4_1' declared at 'D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_4_1.vhd:5' bound to instance 'MUX_4_1_2' of component 'MUX4_1' [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux16_1.vhd:43]
+INFO: [Synth 8-3491] module 'Mux4_1' declared at 'D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_4_1.vhd:5' bound to instance 'MUX_4_1_3' of component 'MUX4_1' [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux16_1.vhd:53]
+INFO: [Synth 8-3491] module 'Mux4_1' declared at 'D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_4_1.vhd:5' bound to instance 'MUX_4_1_4' of component 'MUX4_1' [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux16_1.vhd:63]
+INFO: [Synth 8-3491] module 'Mux4_1' declared at 'D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux_4_1.vhd:5' bound to instance 'MUX_4_1_5' of component 'MUX4_1' [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux16_1.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'Mux16_1' (0#1) [D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.srcs/sources_1/new/Mux16_1.vhd:14]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1031.574 ; gain = 546.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.574 ; gain = 546.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.574 ; gain = 546.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1031.574 ; gain = 546.098
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input    1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1212.051 ; gain = 726.574
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1214.949 ; gain = 729.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:33 . Memory (MB): peak = 1214.949 ; gain = 729.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1214.949 ; gain = 729.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1214.949 ; gain = 729.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1214.949 ; gain = 729.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1214.949 ; gain = 729.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1214.949 ; gain = 729.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1214.949 ; gain = 729.473
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT6  |     4|
+|2     |MUXF7 |     2|
+|3     |MUXF8 |     1|
+|4     |IBUF  |    20|
+|5     |OBUF  |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    28|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1214.949 ; gain = 729.473
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1214.949 ; gain = 729.473
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:40 . Memory (MB): peak = 1214.949 ; gain = 729.473
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 1227.070 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1323.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: bab8bf6d
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:55 . Memory (MB): peak = 1323.648 ; gain = 844.570
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.355 . Memory (MB): peak = 1323.648 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Rifai_es/tesina/rifaiiiiii_16_1/rifaiiiiii_16_1.runs/synth_1/Mux16_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Mux16_1_utilization_synth.rpt -pb Mux16_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  7 13:16:52 2025...

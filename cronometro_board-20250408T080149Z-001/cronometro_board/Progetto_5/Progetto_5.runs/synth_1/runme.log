@@ -1,0 +1,404 @@
+
+*** Running vivado
+    with args -log chrono_display.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source chrono_display.tcl
+
+
+ECHO disattivato.
+ECHO disattivato.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source chrono_display.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 487.238 ; gain = 219.629
+Command: read_checkpoint -auto_incremental -incremental C:/Progetto/Progetto_5/Progetto_5.srcs/utils_1/imports/synth_1/chrono_display.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Progetto/Progetto_5/Progetto_5.srcs/utils_1/imports/synth_1/chrono_display.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top chrono_display -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 6956
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1339.113 ; gain = 441.145
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'chrono_display' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chrono_display.vhd:50]
+INFO: [Synth 8-3491] module 'button_debouncer' declared at 'C:/Progetto/Progetto_3/Progetto 3.srcs/sources_1/new/button_debouncer.vhd:34' bound to instance 'db_op' of component 'button_debouncer' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chrono_display.vhd:150]
+INFO: [Synth 8-638] synthesizing module 'button_debouncer' [C:/Progetto/Progetto_3/Progetto 3.srcs/sources_1/new/button_debouncer.vhd:45]
+	Parameter CLK_period bound to: 10 - type: integer 
+	Parameter btn_noise_time bound to: 10000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Progetto/Progetto_3/Progetto 3.srcs/sources_1/new/button_debouncer.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'button_debouncer' (0#1) [C:/Progetto/Progetto_3/Progetto 3.srcs/sources_1/new/button_debouncer.vhd:45]
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'clock_divider' declared at 'C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/clock_divider.vhd:24' bound to instance 'clk_chrono' of component 'clock_divider' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chrono_display.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'clock_divider' [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/clock_divider.vhd:33]
+	Parameter clock_frequency_in bound to: 100000000 - type: integer 
+	Parameter clock_frequency_out bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_divider' (0#1) [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/clock_divider.vhd:33]
+INFO: [Synth 8-3491] module 'chronometer' declared at 'C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chronometer.vhd:34' bound to instance 'chrono' of component 'chronometer' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chrono_display.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'chronometer' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chronometer.vhd:49]
+	Parameter size bound to: 6 - type: integer 
+	Parameter module bound to: 60 - type: integer 
+INFO: [Synth 8-3491] module 'gen_counter' declared at 'C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/imports/new/gen_counter.vhd:27' bound to instance 'cnt_sec' of component 'gen_counter' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chronometer.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'gen_counter' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/imports/new/gen_counter.vhd:40]
+	Parameter size bound to: 6 - type: integer 
+	Parameter module bound to: 60 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_counter' (0#1) [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/imports/new/gen_counter.vhd:40]
+	Parameter size bound to: 6 - type: integer 
+	Parameter module bound to: 60 - type: integer 
+INFO: [Synth 8-3491] module 'gen_counter' declared at 'C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/imports/new/gen_counter.vhd:27' bound to instance 'cnt_min' of component 'gen_counter' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chronometer.vhd:96]
+	Parameter size bound to: 5 - type: integer 
+	Parameter module bound to: 24 - type: integer 
+INFO: [Synth 8-3491] module 'gen_counter' declared at 'C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/imports/new/gen_counter.vhd:27' bound to instance 'cnt_hour' of component 'gen_counter' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chronometer.vhd:120]
+INFO: [Synth 8-638] synthesizing module 'gen_counter__parameterized2' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/imports/new/gen_counter.vhd:40]
+	Parameter size bound to: 5 - type: integer 
+	Parameter module bound to: 24 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_counter__parameterized2' (0#1) [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/imports/new/gen_counter.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'chronometer' (0#1) [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chronometer.vhd:49]
+	Parameter size bound to: 3 - type: integer 
+	Parameter module bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'gen_counter' declared at 'C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/imports/new/gen_counter.vhd:27' bound to instance 'addr_cnt' of component 'gen_counter' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chrono_display.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'gen_counter__parameterized4' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/imports/new/gen_counter.vhd:40]
+	Parameter size bound to: 3 - type: integer 
+	Parameter module bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_counter__parameterized4' (0#1) [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/imports/new/gen_counter.vhd:40]
+	Parameter Mem_size bound to: 8 - type: integer 
+	Parameter Addr_size bound to: 3 - type: integer 
+	Parameter Data_size bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'MEM' declared at 'C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:34' bound to instance 'chrono_mem' of component 'MEM' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chrono_display.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'MEM' [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:47]
+	Parameter Mem_size bound to: 8 - type: integer 
+	Parameter Addr_size bound to: 3 - type: integer 
+	Parameter Data_size bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'addr' is read in the process but is not in the sensitivity list [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:58]
+WARNING: [Synth 8-614] signal 'data_in' is read in the process but is not in the sensitivity list [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:58]
+WARNING: [Synth 8-614] signal 'data' is read in the process but is not in the sensitivity list [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (0#1) [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:47]
+	Parameter Size bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'gen_mux_2_1' declared at 'C:/Progetto/Progetto_1/Progetto 1.srcs/sources_1/new/gen_mux_2_1.vhd:34' bound to instance 'read_mux' of component 'gen_mux_2_1' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chrono_display.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'gen_mux_2_1' [C:/Progetto/Progetto_1/Progetto 1.srcs/sources_1/new/gen_mux_2_1.vhd:43]
+	Parameter Size bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gen_mux_2_1' (0#1) [C:/Progetto/Progetto_1/Progetto 1.srcs/sources_1/new/gen_mux_2_1.vhd:43]
+INFO: [Synth 8-3491] module 'display_seven_segments' declared at 'C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:32' bound to instance 'display' of component 'display_seven_segments' [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chrono_display.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'display_seven_segments' [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:45]
+	Parameter CLKIN_freq bound to: 100000000 - type: integer 
+	Parameter CLKOUT_freq bound to: 500 - type: integer 
+	Parameter CLKin_freq bound to: 100000000 - type: integer 
+	Parameter CLKout_freq bound to: 500 - type: integer 
+INFO: [Synth 8-3491] module 'clock_filter' declared at 'C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/clock_filter.vhd:32' bound to instance 'clk_filter' of component 'clock_filter' [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'clock_filter' [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/clock_filter.vhd:44]
+	Parameter CLKIN_freq bound to: 100000000 - type: integer 
+	Parameter CLKOUT_freq bound to: 500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clock_filter' (0#1) [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/clock_filter.vhd:44]
+	Parameter size bound to: 3 - type: integer 
+	Parameter module bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'gen_counter' declared at 'C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/imports/new/gen_counter.vhd:27' bound to instance 'counter_instance' of component 'gen_counter' [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:102]
+INFO: [Synth 8-3491] module 'cathodes_manager' declared at 'C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:32' bound to instance 'cathodes_instance' of component 'cathodes_manager' [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'cathodes_manager' [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:39]
+INFO: [Synth 8-226] default block is never used [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:78]
+WARNING: [Synth 8-614] signal 'value' is read in the process but is not in the sensitivity list [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:75]
+WARNING: [Synth 8-614] signal 'dots' is read in the process but is not in the sensitivity list [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:75]
+INFO: [Synth 8-226] default block is never used [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'cathodes_manager' (0#1) [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/cathodes_manager.vhd:39]
+INFO: [Synth 8-3491] module 'anodes_manager' declared at 'C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/anodes_manager.vhd:32' bound to instance 'anodes_instance' of component 'anodes_manager' [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'anodes_manager' [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/anodes_manager.vhd:39]
+INFO: [Synth 8-226] default block is never used [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/anodes_manager.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'anodes_manager' (0#1) [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/anodes_manager.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'display_seven_segments' (0#1) [C:/Users/pasqu/Documents/Università/Architettura dei Sistemi Digitali/Progetti Vivado/12_ROM_ON_DISPLAY/12_ROM_ON_DISPLAY.srcs/sources_1/imports/sources_1/imports/Display7Seg - Vivado/display_seven_segments.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'chrono_display' (0#1) [C:/Progetto/Progetto_5/Progetto_5.srcs/sources_1/new/chrono_display.vhd:50]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1448.516 ; gain = 550.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1448.516 ; gain = 550.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1448.516 ; gain = 550.547
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1448.516 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Progetto/Progetto_5/Progetto_5.srcs/constrs_1/imports/Progetto/Nexys-A7-100T-Master.xdc]
+Finished Parsing XDC File [C:/Progetto/Progetto_5/Progetto_5.srcs/constrs_1/imports/Progetto/Nexys-A7-100T-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Progetto/Progetto_5/Progetto_5.srcs/constrs_1/imports/Progetto/Nexys-A7-100T-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/chrono_display_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/chrono_display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1494.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Impossibile trovare il percorso specificato.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1494.871 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'BTN_state_reg' in module 'button_debouncer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             not_pressed |                               00 |                               00
+             chk_pressed |                               01 |                               01
+                 pressed |                               10 |                               10
+         chk_not_pressed |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'BTN_state_reg' using encoding 'sequential' in module 'button_debouncer'
+WARNING: [Synth 8-327] inferring latch for variable 'tmp_reg' [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[7]' [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[6]' [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[5]' [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[4]' [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[3]' [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[2]' [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[1]' [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg[0]' [C:/Progetto/Progetto_6/Progetto 6.srcs/sources_1/new/MEM.vhd:62]
+WARNING: [Synth 8-327] inferring latch for variable 'y_reg' [C:/Progetto/Progetto_1/Progetto 1.srcs/sources_1/new/gen_mux_2_1.vhd:51]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:28 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               18 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 6     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 19    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (chrono_mem/tmp_reg[7]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (chrono_mem/data_reg[7][7]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (chrono_mem/data_reg[6][7]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (chrono_mem/data_reg[5][7]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (chrono_mem/data_reg[4][7]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (chrono_mem/data_reg[3][7]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (chrono_mem/data_reg[2][7]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (chrono_mem/data_reg[1][7]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (chrono_mem/data_reg[0][7]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[31]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[30]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[29]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[28]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[27]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[26]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[25]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[24]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[23]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[22]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[21]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[20]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[19]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[18]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[17]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[16]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[15]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[14]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[13]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[12]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[11]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[10]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[9]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[8]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[7]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[6]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[5]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[4]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[3]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[2]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[1]) is unused and will be removed from module chrono_display.
+WARNING: [Synth 8-3332] Sequential element (read_mux/y_reg[0]) is unused and will be removed from module chrono_display.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:37 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:45 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:46 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    20|
+|3     |LUT1   |     3|
+|4     |LUT2   |    22|
+|5     |LUT3   |    17|
+|6     |LUT4   |    32|
+|7     |LUT5   |    49|
+|8     |LUT6   |    83|
+|9     |MUXF7  |     9|
+|10    |FDRE   |   107|
+|11    |LD     |    20|
+|12    |LDC    |   160|
+|13    |IBUF   |    14|
+|14    |OBUF   |    19|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1494.871 ; gain = 596.902
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 52 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:50 . Memory (MB): peak = 1494.871 ; gain = 550.547
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:53 . Memory (MB): peak = 1494.871 ; gain = 596.902
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1494.871 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 209 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1494.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 180 instances were transformed.
+  LD => LDCE: 20 instances
+  LDC => LDCE: 160 instances
+
+Impossibile trovare il percorso specificato.
+Synth Design complete | Checksum: a82c3557
+INFO: [Common 17-83] Releasing license: Synthesis
+67 Infos, 57 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:02 . Memory (MB): peak = 1494.871 ; gain = 1002.664
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1494.871 ; gain = 0.000
+[libprotobuf ERROR C:\w10\HEAD\src\ext\protobuf\build\lnx64\protobuf-3.7.1\src\google\protobuf\wire_format_lite.cc:611] String field 'HDMetricDBGroup.MetricMapEntry.value' contains invalid UTF-8 data when serializing a protocol buffer. Use the 'bytes' type if you intend to send raw bytes. 
+[libprotobuf ERROR C:\w10\HEAD\src\ext\protobuf\build\lnx64\protobuf-3.7.1\src\google\protobuf\wire_format_lite.cc:611] String field 'HDMetricDBGroup.MetricMapEntry.value' contains invalid UTF-8 data when serializing a protocol buffer. Use the 'bytes' type if you intend to send raw bytes. 
+[libprotobuf ERROR C:\w10\HEAD\src\ext\protobuf\build\lnx64\protobuf-3.7.1\src\google\protobuf\wire_format_lite.cc:611] String field 'HDMetricDBGroup.MetricMapEntry.value' contains invalid UTF-8 data when serializing a protocol buffer. Use the 'bytes' type if you intend to send raw bytes. 
+[libprotobuf ERROR C:\w10\HEAD\src\ext\protobuf\build\lnx64\protobuf-3.7.1\src\google\protobuf\wire_format_lite.cc:611] String field 'HDMetricDBGroup.MetricMapEntry.value' contains invalid UTF-8 data when serializing a protocol buffer. Use the 'bytes' type if you intend to send raw bytes. 
+INFO: [Common 17-1381] The checkpoint 'C:/Progetto/Progetto_5/Progetto_5.runs/synth_1/chrono_display.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file chrono_display_utilization_synth.rpt -pb chrono_display_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 12 10:16:11 2024...

@@ -1,0 +1,14 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+D:/esercizio_12/12_1_provaDicembre_A_veloce/12_1_provaDicembre_A_veloce.srcs/sim_1/new/tb_sistema_complessivo_a_veloce.vhd,1738233082,vhdl,,,,tb_sistema_complessivo,,,,,,,,
+D:/esercizio_12/12_1_provaDicembre_A_veloce/12_1_provaDicembre_A_veloce.srcs/sources_1/imports/new/Rom_8_4.vhd,1738250896,vhdl,,,,rom,,,,,,,,
+D:/esercizio_12/12_1_provaDicembre_A_veloce/12_1_provaDicembre_A_veloce.srcs/sources_1/imports/new/contatore_mod_8.vhd,1738247466,vhdl,,,,counter,,,,,,,,
+D:/esercizio_12/12_1_provaDicembre_A_veloce/12_1_provaDicembre_A_veloce.srcs/sources_1/imports/new/registro.vhd,1738074848,vhdl,,,,registro,,,,,,,,
+D:/esercizio_12/12_1_provaDicembre_A_veloce/12_1_provaDicembre_A_veloce.srcs/sources_1/imports/new/sistema_a.vhd,1738276276,vhdl,,,,sistema_a,,,,,,,,
+D:/esercizio_12/12_1_provaDicembre_A_veloce/12_1_provaDicembre_A_veloce.srcs/sources_1/imports/new/sistema_b.vhd,1738275334,vhdl,,,,sistema_b,,,,,,,,
+D:/esercizio_12/12_1_provaDicembre_A_veloce/12_1_provaDicembre_A_veloce.srcs/sources_1/imports/new/sistema_complessivo.vhd,1738275374,vhdl,,,,sistema_complessivo,,,,,,,,
+D:/esercizio_12/12_1_provaDicembre_A_veloce/12_1_provaDicembre_A_veloce.srcs/sources_1/imports/new/sommatore.vhd,1738247566,vhdl,,,,carry_lookahead_adder,,,,,,,,
+D:/esercizio_12/12_1_provaDicembre_A_veloce/12_1_provaDicembre_A_veloce.srcs/sources_1/imports/new/unita_controllo_A.vhd,1740136172,vhdl,,,,unita_controllo_a,,,,,,,,
+D:/esercizio_12/12_1_provaDicembre_A_veloce/12_1_provaDicembre_A_veloce.srcs/sources_1/imports/new/unita_controllo_B.vhd,1740134970,vhdl,,,,unita_controllo_b,,,,,,,,

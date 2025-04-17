@@ -1,0 +1,7 @@
+Running: xsim.dir/handshaking_behav/xsimk.exe -simmode gui -wdb handshaking_behav.wdb -simrunnum 0 -socket 58469
+Design successfully loaded
+Design Loading Memory Usage: 7360 KB (Peak: 7360 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 7940 KB (Peak: 7940 KB)
+Simulation CPU Usage: 62 ms

@@ -1,0 +1,231 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Feb 13 15:48:48 2025
+# Process ID: 7428
+# Current directory: D:/Rifai_es/MUX16_1/MUX16_1.runs/synth_1
+# Command line: vivado.exe -log Mux16_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Mux16_1.tcl
+# Log file: D:/Rifai_es/MUX16_1/MUX16_1.runs/synth_1/Mux16_1.vds
+# Journal file: D:/Rifai_es/MUX16_1/MUX16_1.runs/synth_1\vivado.jou
+# Running On: LAPTOP-1ES8J68V, OS: Windows, CPU Frequency: 2096 MHz, CPU Physical cores: 8, Host memory: 7448 MB
+#-----------------------------------------------------------
+source Mux16_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 436.910 ; gain = 163.160
+Command: synth_design -top Mux16_1 -part xc7a200tsbv484-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 15032
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 874.070 ; gain = 412.285
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Mux16_1' [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/Mux16_1.vhd:43]
+INFO: [Synth 8-3491] module 'MUX4_1' declared at 'D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX4_1.vhd:34' bound to instance 'MUX_1' of component 'MUX4_1' [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/Mux16_1.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'MUX4_1' [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX4_1.vhd:44]
+INFO: [Synth 8-3491] module 'MUX_2_1' declared at 'D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX_2_1.vhd:34' bound to instance 'MUX0' of component 'MUX_2_1' [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX4_1.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'MUX_2_1' [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX_2_1.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'MUX_2_1' (0#1) [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX_2_1.vhd:38]
+INFO: [Synth 8-3491] module 'MUX_2_1' declared at 'D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX_2_1.vhd:34' bound to instance 'MUX1' of component 'MUX_2_1' [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX4_1.vhd:68]
+INFO: [Synth 8-3491] module 'MUX_2_1' declared at 'D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX_2_1.vhd:34' bound to instance 'MUX2' of component 'MUX_2_1' [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX4_1.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'MUX4_1' (0#1) [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX4_1.vhd:44]
+INFO: [Synth 8-3491] module 'MUX4_1' declared at 'D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX4_1.vhd:34' bound to instance 'MUX_2' of component 'MUX4_1' [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/Mux16_1.vhd:71]
+INFO: [Synth 8-3491] module 'MUX4_1' declared at 'D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX4_1.vhd:34' bound to instance 'MUX_3' of component 'MUX4_1' [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/Mux16_1.vhd:80]
+INFO: [Synth 8-3491] module 'MUX4_1' declared at 'D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX4_1.vhd:34' bound to instance 'MUX_4' of component 'MUX4_1' [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/Mux16_1.vhd:90]
+INFO: [Synth 8-3491] module 'MUX4_1' declared at 'D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX4_1.vhd:34' bound to instance 'MUX5' of component 'MUX4_1' [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/Mux16_1.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'Mux16_1' (0#1) [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/Mux16_1.vhd:43]
+WARNING: [Synth 8-3848] Net Y in module/entity MUX4_1 does not have driver. [D:/Rifai_es/MUX16_1/MUX16_1.srcs/sources_1/new/MUX4_1.vhd:41]
+WARNING: [Synth 8-7129] Port Y in module MUX4_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A0 in module MUX4_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A1 in module MUX4_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A2 in module MUX4_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A3 in module MUX4_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S0 in module MUX4_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S1 in module MUX4_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 964.574 ; gain = 502.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 964.574 ; gain = 502.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tsbv484-2L
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tsbv484-2L
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 964.574 ; gain = 502.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 964.574 ; gain = 502.789
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Y in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[0] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[1] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[2] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[3] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[4] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[5] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[6] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[7] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[8] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[9] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[10] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[11] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[12] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[13] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[14] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I[15] in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S0 in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S1 in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S2 in module Mux16_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S3 in module Mux16_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1198.637 ; gain = 736.852
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1198.637 ; gain = 736.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:44 . Memory (MB): peak = 1198.637 ; gain = 736.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_1/MUX0  of module MUX_2_1__13 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_1/MUX1  of module MUX_2_1__14 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_1/MUX2  of module MUX_2_1__1 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_2/MUX0  of module MUX_2_1__11 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_2/MUX1  of module MUX_2_1__12 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_2/MUX2  of module MUX_2_1__2 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_3/MUX0  of module MUX_2_1__9 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_3/MUX1  of module MUX_2_1__10 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_3/MUX2  of module MUX_2_1__3 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_4/MUX0  of module MUX_2_1__7 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_4/MUX1  of module MUX_2_1__8 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX_4/MUX2  of module MUX_2_1__4 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX5/MUX0  of module MUX_2_1__5 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX5/MUX1  of module MUX_2_1__6 having unconnected or no output ports
+INFO: [Synth 8-4649] Removing BlackBox instance \MUX5/MUX2  of module MUX_2_1 having unconnected or no output ports
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1198.637 ; gain = 736.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1198.637 ; gain = 736.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1198.637 ; gain = 736.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1198.637 ; gain = 736.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1198.637 ; gain = 736.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1198.637 ; gain = 736.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |OBUFT |     1|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     1|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1198.637 ; gain = 736.852
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 30 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1198.637 ; gain = 736.852
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:55 . Memory (MB): peak = 1198.637 ; gain = 736.852
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1201.609 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1308.949 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7f987c80
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 30 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:01:06 . Memory (MB): peak = 1308.949 ; gain = 872.039
+INFO: [Common 17-1381] The checkpoint 'D:/Rifai_es/MUX16_1/MUX16_1.runs/synth_1/Mux16_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Mux16_1_utilization_synth.rpt -pb Mux16_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 13 15:50:25 2025...

@@ -1,0 +1,274 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Apr  8 18:56:44 2025
+# Process ID: 8052
+# Current directory: D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.runs/synth_1
+# Command line: vivado.exe -log B.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source B.tcl
+# Log file: D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.runs/synth_1/B.vds
+# Journal file: D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.runs/synth_1\vivado.jou
+# Running On: LAPTOP-1ES8J68V, OS: Windows, CPU Frequency: 2096 MHz, CPU Physical cores: 8, Host memory: 7448 MB
+#-----------------------------------------------------------
+source B.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:25 . Memory (MB): peak = 511.430 ; gain = 215.020
+Command: read_checkpoint -auto_incremental -incremental D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/utils_1/imports/synth_1/counter_modN.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/utils_1/imports/synth_1/counter_modN.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top B -part xc7k70tfbv676-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 27900
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:16 . Memory (MB): peak = 959.840 ; gain = 438.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'B' [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/B.vhd:43]
+INFO: [Synth 8-3491] module 'delay' declared at 'D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/delay.vhd:34' bound to instance 'ritardo' of component 'delay' [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/B.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'delay' [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/delay.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'delay' (0#1) [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/delay.vhd:42]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'counter_modN' declared at 'D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/contatore.vhd:32' bound to instance 'count' of component 'counter_modN' [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/B.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'counter_modN' [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/contatore.vhd:43]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-226] default block is never used [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/contatore.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'counter_modN' (0#1) [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/contatore.vhd:43]
+INFO: [Synth 8-3491] module 'entita_B' declared at 'D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/entita_B.vhd:34' bound to instance 'entityB' of component 'entita_B' [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/B.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'entita_B' [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/entita_B.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'entita_B' (0#1) [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/entita_B.vhd:45]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'memoriaB' declared at 'D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/memoriaB.vhd:24' bound to instance 'memB' of component 'memoriaB' [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/B.vhd:136]
+INFO: [Synth 8-638] synthesizing module 'memoriaB' [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/memoriaB.vhd:37]
+	Parameter N bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'memoriaB' (0#1) [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/memoriaB.vhd:37]
+INFO: [Synth 8-3491] module 'unitaoperativaB' declared at 'D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/unitaoperativaB.vhd:34' bound to instance 'uoB' of component 'unitaoperativaB' [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/B.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'unitaoperativaB' [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/unitaoperativaB.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'unitaoperativaB' (0#1) [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/unitaoperativaB.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'B' (0#1) [D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/sources_1/new/B.vhd:43]
+WARNING: [Synth 8-7129] Port rst in module B is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:20 . Memory (MB): peak = 1066.484 ; gain = 545.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1066.484 ; gain = 545.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:21 . Memory (MB): peak = 1066.484 ; gain = 545.527
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.srcs/utils_1/imports/synth_1/counter_modN.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1066.484 ; gain = 545.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1066.484 ; gain = 545.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'curr_reg' in module 'entita_B'
+INFO: [Synth 8-802] inferred FSM for state register 'curr_reg' in module 'unitaoperativaB'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                            00001 |                              000
+                      s1 |                            00010 |                              001
+                      s2 |                            00100 |                              010
+                      s3 |                            01000 |                              011
+                      s4 |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_reg' using encoding 'one-hot' in module 'entita_B'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                           000001 |                              000
+                      s1 |                           000010 |                              001
+                      s2 |                           000100 |                              010
+                      s3 |                           001000 |                              011
+                      s4 |                           010000 |                              100
+                      s5 |                           100000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_reg' using encoding 'one-hot' in module 'unitaoperativaB'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:22 . Memory (MB): peak = 1066.484 ; gain = 545.527
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 5     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	               32 Bit	(8 X 4 bit)          RAMs := 1     
++---Muxes : 
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 2     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port rst in module B is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:47 . Memory (MB): peak = 1245.445 ; gain = 724.488
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:47 . Memory (MB): peak = 1246.531 ; gain = 725.574
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:47 . Memory (MB): peak = 1255.715 ; gain = 734.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:56 . Memory (MB): peak = 1255.715 ; gain = 734.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:56 . Memory (MB): peak = 1255.715 ; gain = 734.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:56 . Memory (MB): peak = 1255.715 ; gain = 734.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:56 . Memory (MB): peak = 1255.715 ; gain = 734.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:56 . Memory (MB): peak = 1255.715 ; gain = 734.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:56 . Memory (MB): peak = 1255.715 ; gain = 734.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     4|
+|4     |LUT3 |     3|
+|5     |LUT4 |     6|
+|6     |LUT5 |     2|
+|7     |LUT6 |     3|
+|8     |FDRE |    21|
+|9     |IBUF |     2|
+|10    |OBUF |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------+----------------+------+
+|      |Instance  |Module          |Cells |
++------+----------+----------------+------+
+|1     |top       |                |    44|
+|2     |  count   |counter_modN    |    13|
+|3     |  entityB |entita_B        |    15|
+|4     |  ritardo |delay           |     1|
+|5     |  uoB     |unitaoperativaB |    11|
++------+----------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:56 . Memory (MB): peak = 1255.715 ; gain = 734.758
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:56 . Memory (MB): peak = 1255.715 ; gain = 734.758
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:56 . Memory (MB): peak = 1255.715 ; gain = 734.758
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1259.598 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1357.039 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: dbc0f08
+INFO: [Common 17-83] Releasing license: Synthesis
+35 Infos, 3 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:01:10 . Memory (MB): peak = 1357.039 ; gain = 842.660
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.676 . Memory (MB): peak = 1357.039 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/ASDI/Rifai_es/tesina/ES_8_1/ES_8_1/ES_8_1.runs/synth_1/B.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file B_utilization_synth.rpt -pb B_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  8 18:59:11 2025...

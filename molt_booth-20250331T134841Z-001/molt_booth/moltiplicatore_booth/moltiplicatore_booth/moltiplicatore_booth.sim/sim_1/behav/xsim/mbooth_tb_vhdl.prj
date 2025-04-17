@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../moltiplicatore_booth.srcs/sources_1/new/adder_sub.vhd" \
+"../../../../moltiplicatore_booth.srcs/sources_1/new/cont_mod8.vhd" \
+"../../../../moltiplicatore_booth.srcs/sources_1/new/full_adder.vhd" \
+"../../../../moltiplicatore_booth.srcs/sources_1/new/molt_booth.vhd" \
+"../../../../moltiplicatore_booth.srcs/sources_1/new/mux_21.vhd" \
+"../../../../moltiplicatore_booth.srcs/sources_1/new/registro8.vhd" \
+"../../../../moltiplicatore_booth.srcs/sources_1/new/ripple_carry.vhd" \
+"../../../../moltiplicatore_booth.srcs/sources_1/new/shift_register.vhd" \
+"../../../../moltiplicatore_booth.srcs/sources_1/new/unita_controllo.vhd" \
+"../../../../moltiplicatore_booth.srcs/sources_1/new/unita_operativa.vhd" \
+"../../../../moltiplicatore_booth.srcs/sim_1/new/mbooth_tb.vhd" \
+
+# Do not sort compile order
+nosort

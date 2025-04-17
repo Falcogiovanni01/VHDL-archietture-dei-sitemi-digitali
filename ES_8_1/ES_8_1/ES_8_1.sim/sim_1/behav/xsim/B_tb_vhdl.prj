@@ -1,0 +1,15 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ES_8_1.srcs/sources_1/new/A.vhd" \
+"../../../../ES_8_1.srcs/sources_1/new/B.vhd" \
+"../../../../ES_8_1.srcs/sources_1/new/contatore.vhd" \
+"../../../../ES_8_1.srcs/sources_1/new/delay.vhd" \
+"../../../../ES_8_1.srcs/sources_1/new/entita_A.vhd" \
+"../../../../ES_8_1.srcs/sources_1/new/entita_B.vhd" \
+"../../../../ES_8_1.srcs/sources_1/new/memoriaB.vhd" \
+"../../../../ES_8_1.srcs/sources_1/new/romA.vhd" \
+"../../../../ES_8_1.srcs/sources_1/new/unitaoperativaB.vhd" \
+"../../../../ES_8_1.srcs/sim_1/new/B_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Mar 11 16:35:52 2025
+# Process ID: 17640
+# Current directory: C:/Users/mauro/Desktop/magistrale/ASD/esercizi vivado/esercizio3_finale/ric_sequence
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20912 C:\Users\mauro\Desktop\magistrale\ASD\esercizi vivado\esercizio3_finale\ric_sequence\ric_sequence.xpr
+# Log file: C:/Users/mauro/Desktop/magistrale/ASD/esercizi vivado/esercizio3_finale/ric_sequence/vivado.log
+# Journal file: C:/Users/mauro/Desktop/magistrale/ASD/esercizi vivado/esercizio3_finale/ric_sequence\vivado.jou
+# Running On: Lemauro, OS: Windows, CPU Frequency: 2795 MHz, CPU Physical cores: 8, Host memory: 14845 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/mauro/Desktop/magistrale/ASD/esercizi vivado/esercizio3_finale/ric_sequence/ric_sequence.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_design

@@ -1,0 +1,7 @@
+v 4
+file / "c:\Users\miche\Progetti\ASDi\Elaborati\Display_Driver\Binary_Decoder.vhdl" "c8765c88310d6154d1fc058e27e07850185aba28" "20231105162137.483":
+  entity binary_decoder at 1( 0) + 0 on 13;
+  architecture behavioral of binary_decoder at 15( 330) + 0 on 14;
+file / "c:\Users\miche\Progetti\ASDi\Elaborati\Display_Driver\clock_divider.vhdl" "240295af45c9c2bc466d5a3cbc5b608469d0c124" "20231105153036.925":
+  entity clock_divider at 1( 0) + 0 on 11;
+  architecture behavioral of clock_divider at 16( 329) + 0 on 12;

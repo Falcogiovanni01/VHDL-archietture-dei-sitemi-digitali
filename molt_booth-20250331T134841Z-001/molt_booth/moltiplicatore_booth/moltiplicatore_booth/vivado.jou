@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Mar 30 17:16:28 2025
+# Process ID: 12380
+# Current directory: C:/Users/mauro/Desktop/moltiplicatore_booth
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19912 C:\Users\mauro\Desktop\moltiplicatore_booth\moltiplicatore_booth.xpr
+# Log file: C:/Users/mauro/Desktop/moltiplicatore_booth/vivado.log
+# Journal file: C:/Users/mauro/Desktop/moltiplicatore_booth\vivado.jou
+# Running On: Lemauro, OS: Windows, CPU Frequency: 2795 MHz, CPU Physical cores: 8, Host memory: 14845 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/mauro/Desktop/moltiplicatore_booth/moltiplicatore_booth.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/mauro/Desktop/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/molt_booth_on_board.vhd w ]
+add_files C:/Users/mauro/Desktop/moltiplicatore_booth/moltiplicatore_booth.srcs/sources_1/new/molt_booth_on_board.vhd
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top molt_booth_on_board [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+file mkdir C:/Users/mauro/Desktop/moltiplicatore_booth/moltiplicatore_booth.srcs/constrs_1
+add_files -fileset constrs_1 -norecurse C:/Users/mauro/Desktop/digilent-xdc-master/Nexys-A7-50T-Master.xdc
+import_files -fileset constrs_1 C:/Users/mauro/Desktop/digilent-xdc-master/Nexys-A7-50T-Master.xdc
+import_files -norecurse {{C:/Users/mauro/Desktop/magistrale/ASD/esercizi vivado/codici src/ButtonDebouncer.vhd}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

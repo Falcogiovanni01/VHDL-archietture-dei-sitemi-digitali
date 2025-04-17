@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../omega_network.srcs/sources_1/new/DEM1_2.vhd" \
+"../../../../omega_network.srcs/sources_1/new/Mux_2_1.vhd" \
+"../../../../omega_network.srcs/sources_1/new/control_unit.vhd" \
+"../../../../omega_network.srcs/sources_1/new/omega_network.vhd" \
+"../../../../omega_network.srcs/sources_1/new/switchElementare.vhd" \
+"../../../../omega_network.srcs/sim_1/new/tb_omega_network.vhd" \
+
+# Do not sort compile order
+nosort

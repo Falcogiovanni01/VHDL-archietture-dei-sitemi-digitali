@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Esercizio 9.2.srcs/sources_1/new/A.vhd" \
+"../../../../Esercizio 9.2.srcs/sources_1/new/B.vhd" \
+"../../../../Esercizio 9.2.srcs/sources_1/new/ROM.vhd" \
+"../../../../Esercizio 9.2.srcs/sources_1/new/UARTcomponent.vhd" \
+"../../../../Esercizio 9.2.srcs/sources_1/new/contatoreA.vhd" \
+"../../../../Esercizio 9.2.srcs/sources_1/new/controlloA.vhd" \
+"../../../../Esercizio 9.2.srcs/sources_1/new/controlloB.vhd" \
+"../../../../Esercizio 9.2.srcs/sources_1/new/delay.vhd" \
+"../../../../Esercizio 9.2.srcs/sources_1/new/memoriaB.vhd" \
+"../../../../Esercizio 9.2.srcs/sources_1/new/sistemafinale.vhd" \
+"../../../../Esercizio 9.2.srcs/sim_1/new/sistemafinale_tb.vhd" \
+
+# Do not sort compile order
+nosort

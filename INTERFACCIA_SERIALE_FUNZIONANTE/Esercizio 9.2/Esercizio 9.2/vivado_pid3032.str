@@ -1,0 +1,243 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:48:16 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 3032
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Jan 12 13:01:07 CET 2023
+Time zone: 	Central European Standard Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	D:/Programmi/Vivado/2022.1/tps/win64/jre11.0.11_9
+Java executable: 	D:/Programmi/Vivado/2022.1/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	nicol
+User home directory: C:/Users/nicol
+User working directory: D:/Downloads/Esercizio 9.2/Esercizio 9.2
+User country: 	IT
+User language: 	it
+User locale: 	it_IT
+
+RDI_BASEROOT: D:/Programmi/Vivado
+HDI_APPROOT: D:/Programmi/Vivado/2022.1
+RDI_DATADIR: D:/Programmi/Vivado/2022.1/data
+RDI_BINDIR: D:/Programmi/Vivado/2022.1/bin
+
+Vivado preferences file: C:/Users/nicol/AppData/Roaming/Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: C:/Users/nicol/AppData/Roaming/Xilinx/Vivado/2022.1/
+Vivado layouts directory: C:/Users/nicol/AppData/Roaming/Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	D:/Programmi/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	D:/Downloads/Esercizio 9.2/Esercizio 9.2/vivado.log
+Vivado journal file: 	D:/Downloads/Esercizio 9.2/Esercizio 9.2/vivado.jou
+Engine tmp dir: 	D:/Downloads/Esercizio 9.2/Esercizio 9.2/.Xil/Vivado-3032-LAPTOP-KSB2CCNQ
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Programmi/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: D:/Programmi/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: D:/Programmi/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: D:/Programmi/Vivado/2022.1
+XILINX_VIVADO: D:/Programmi/Vivado/2022.1
+XILINX_VIVADO_HLS: D:/Programmi/Vivado/2022.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,483 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: D:\Downloads\Esercizio 9.2\Esercizio 9.2\Esercizio 9.2.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,483 MB. GUI used memory: 58 MB. Current time: 1/12/23, 1:01:08 PM CET
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 77 MB (+78702kb) [00:00:15]
+// [Engine Memory]: 1,483 MB (+1403640kb) [00:00:15]
+// [GUI Memory]: 83 MB (+1850kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  2824 ms.
+// Tcl Message: open_project {D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Giuseppe/Universit/Progetto ASDi/Esercizio 9.2' since last save. INFO: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.gen/sources_1', nor could it be found using path 'D:/Giuseppe/Universit/Progetto ASDi/Esercizio 9.2/Esercizio 9.2.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programmi/Vivado/2022.1/data/ip'. 
+// [GUI Memory]: 96 MB (+8928kb) [00:00:16]
+// Tcl Message: open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:09 . Memory (MB): peak = 1663.609 ; gain = 0.000 
+// Project name: Esercizio 9.2; location: D:/Downloads/Esercizio 9.2/Esercizio 9.2; part: xc7a50ticsg324-1L
+dismissDialog("Open Project"); // bA
+// [GUI Memory]: 108 MB (+8267kb) [00:00:19]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // n
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ar
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'sistemafinale_tb' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'D:/Programmi/Vivado/2022.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'sistemafinale_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj sistemafinale_tb_vhdl.prj" 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '3' seconds INFO: [USF-XSim-99] Step results log file:'D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.sim/sim_1/behav/xsim/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.sim/sim_1/behav/xsim/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  
+// HOptionPane Error: 'ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.  (Run Simulation)'
+// 'd' command handler elapsed time: 7 seconds
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Critical Messages"); // a
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g: FALSE
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // g: FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.sim/sim_1/behav/xsim/xvhdl.log' file for more information.. ]", 2, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 3, false); // ah
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 6); // D
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aL
+// Elapsed time: 10 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aL
+// Elapsed time: 22 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 113, 136); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 113, 136, false, false, false, false, true); // dT - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 180, 140); // dT
+typeControlKey(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, "RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR", 'c'); // dT
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 140, 99); // dT
+// Elapsed time: 13 seconds
+selectButton(RDIResourceCommand.RDICommands_SETTINGS, "settings"); // D
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  1927 ms.
+dismissDialog("Settings"); // d
+// [GUI Memory]: 121 MB (+6907kb) [00:02:30]
+// Elapsed time: 88 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd), entita_B : B(Structural) (B.vhd)]", 3); // D
+// [GUI Memory]: 147 MB (+21290kb) [00:03:45]
+selectCodeEditor("sistemafinale.vhd", 83, 176); // be
+selectCodeEditor("sistemafinale.vhd", 83, 176, false, false, false, false, true); // be - Double Click
+// Elapsed time: 31 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd), entita_A : A(Structural) (A.vhd)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd), entita_A : A(Structural) (A.vhd), uartA : UARTcomponent(Behavioral) (UARTcomponent.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd), entita_A : A(Structural) (A.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd), entita_B : B(Structural) (B.vhd)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd), entita_B : B(Structural) (B.vhd)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "A.vhd", 2); // m
+// Elapsed time: 79 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd), entita_A : A(Structural) (A.vhd)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd), entita_A : A(Structural) (A.vhd), UCA : controlloA(Behavioral) (controlloA.vhd)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd), entita_A : A(Structural) (A.vhd), UCA : controlloA(Behavioral) (controlloA.vhd)]", 6, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 23 seconds
+selectCodeEditor("controlloA.vhd", 82, 317); // be
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "A.vhd", 2); // m
+selectCodeEditor("A.vhd", 108, 410); // be
+selectCodeEditor("A.vhd", 108, 410, false, false, false, false, true); // be - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("A.vhd", 167, 49); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 100 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd), entita_A : A(Structural) (A.vhd), UCA : controlloA(Behavioral) (controlloA.vhd)]", 6, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, sistemafinale(Structural) (sistemafinale.vhd), entita_A : A(Structural) (A.vhd), UCA : controlloA(Behavioral) (controlloA.vhd)]", 6, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "B.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "A.vhd", 2); // m
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Elapsed time: 67 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "A.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "B.vhd", 2); // m
+// Elapsed time: 14 seconds
+selectCodeEditor("B.vhd", 36, 89); // be
+// Elapsed time: 12 seconds
+selectCodeEditor("B.vhd", 62, 271); // be
+selectCodeEditor("B.vhd", 62, 271); // be
+selectCodeEditor("B.vhd", 62, 271, false, false, false, false, true); // be - Double Click
+// Elapsed time: 16 seconds
+selectCodeEditor("B.vhd", 107, 238); // be
+selectCodeEditor("B.vhd", 107, 238, false, false, false, false, true); // be - Double Click
+// Elapsed time: 127 seconds
+selectCodeEditor("B.vhd", 102, 203); // be
+// Elapsed time: 29 seconds
+selectCodeEditor("B.vhd", 178, 313); // be
+selectCodeEditor("B.vhd", 275, 399); // be
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // n
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ar
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: Command: launch_simulation  
+// Tcl Message: INFO: [Vivado 12-12493] Simulation top is 'sistemafinale_tb' 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-72] Using boost library from 'D:/Programmi/Vivado/2022.1/tps/boost_1_72_0' INFO: [SIM-utils-54] Inspecting design source files for 'sistemafinale_tb' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvhdl --incr --relax -prj sistemafinale_tb_vhdl.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.sim/sim_1/behav/xsim' 
+// Tcl Message: "xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sistemafinale_tb_behav xil_defaultlib.sistemafinale_tb -log elaborate.log" 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Built simulation snapshot sistemafinale_tb_behav 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "sistemafinale_tb_behav -key {Behavioral:sim_1:Functional:sistemafinale_tb} -tclbatch {sistemafinale_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Elapsed time: 18 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,483 MB. GUI used memory: 85 MB. Current time: 1/12/23, 1:14:50 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,483 MB. GUI used memory: 85 MB. Current time: 1/12/23, 1:15:20 PM CET
+// Elapsed time: 63 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+// HMemoryUtils.trashcanNow. Engine heap size: 1,483 MB. GUI used memory: 85 MB. Current time: 1/12/23, 1:15:50 PM CET

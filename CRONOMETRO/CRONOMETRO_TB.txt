@@ -1,0 +1,91 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity cronometro_tb is
+end cronometro_tb;
+
+architecture test of cronometro_tb is
+    signal CLOCK_c : std_logic := '0';
+    signal reset_c : std_logic := '0';
+    signal enable_c : std_logic := '0';
+    signal input_c : std_logic_vector(2 downto 0) := (others => '0');
+    signal set_c : std_logic_vector(5 downto 0) := (others => '0');
+    signal orario : std_logic_vector(16 downto 0);
+    signal div_c : std_logic;
+    
+    constant clock_period : time := 10 ns;
+
+    component cronometro
+        port (
+            CLOCK_c : in std_logic;
+            reset_c : in std_logic;
+            enable_c: in std_logic;
+            input : in std_logic_vector(2 downto 0);
+            set_c: in std_logic_vector(5 downto 0);
+            orario  : out std_logic_vector(16 downto 0);
+            div_c : out std_logic
+        );
+    end component;
+
+begin
+    uut: cronometro
+        port map (
+            CLOCK_c => CLOCK_c,
+            reset_c => reset_c,
+            enable_c => enable_c,
+            input => input_c,
+            set_c => set_c,
+            orario => orario,
+            div_c => div_c
+        );
+    
+    -- Clock process
+    clock_process : process
+    begin
+        while now < 200 s loop -- Limitiamo il test a un tempo ragionevole
+            CLOCK_c <= '0';
+            wait for clock_period/2;
+            CLOCK_c <= '1';
+            wait for clock_period/2;
+        end loop;
+        wait;
+    end process;
+    
+    -- Stimulus process
+    stimulus_process : process
+    begin
+        -- Reset iniziale
+        reset_c <= '1';
+        wait for 20 ns;
+        reset_c <= '0';
+        
+        -- Abilitiamo il cronometro
+        enable_c <= '1';
+        wait for 90 sec; -- Attendere fino a 1 minuto e 30 secondi
+        
+        -- Carichiamo il valore 10:59:00
+        enable_c <= '0';
+        input_c <= "111"; -- Segnale per il caricamento
+        set_c <= std_logic_vector(to_unsigned(10, 6));
+        wait for 10 ns;
+        input_c <= "110";
+        set_c <= std_logic_vector(to_unsigned(59, 6));
+        wait for 10 ns;
+        input_c <= "101";
+        set_c <= std_logic_vector(to_unsigned(0, 6));
+        wait for 10 ns;
+        input_c <= "000";
+        enable_c <= '1';
+        
+        -- Attendere fino a 11:00:10
+        wait for 70 sec;
+        
+        -- Reset finale
+        reset_c <= '1';
+        wait for 20 ns;
+        reset_c <= '0';
+        
+        wait;
+    end process;
+end test;

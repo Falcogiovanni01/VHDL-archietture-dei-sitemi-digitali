@@ -1,0 +1,29 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot sistemafinale_tb_behav xil_defaultlib.sistemafinale_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behavioral of entity xil_defaultlib.UARTcomponent [\UARTcomponent(baud_divide_g=2,b...]
+Compiling architecture behavioral of entity xil_defaultlib.ROM [\ROM(n=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.contatore [\contatore(n=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.controlloA [controlloa_default]
+Compiling architecture behavioral of entity xil_defaultlib.delay [delay_default]
+Compiling architecture structural of entity xil_defaultlib.A [a_default]
+Compiling architecture behavioral of entity xil_defaultlib.controlloB [controllob_default]
+Compiling architecture behavioral of entity xil_defaultlib.memoriaB [\memoriaB(n=4)\]
+Compiling architecture structural of entity xil_defaultlib.B [b_default]
+Compiling architecture structural of entity xil_defaultlib.sistemafinale [sistemafinale_default]
+Compiling architecture behavioral of entity xil_defaultlib.sistemafinale_tb
+Built simulation snapshot sistemafinale_tb_behav

@@ -1,0 +1,58 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity reg_ss is
+    port (
+        x, clock, reset: in std_logic;
+        y: out std_logic
+    );
+end reg_ss;
+
+architecture structural of reg_ss is
+    component d_flip_flop is
+        port (
+            D, clk, rst: in std_logic;
+            Q: out std_logic
+        );
+    end component;
+
+    signal temp1, temp2, temp3, temp4: std_logic;
+
+begin
+    -- Istanza del primo flip-flop D
+    FF1: d_flip_flop port map (
+        D => x,
+        clk => clock,
+        rst => reset,
+        Q => temp1
+    );
+
+    -- Istanza del secondo flip-flop D
+    FF2: d_flip_flop port map (
+        D => temp1,
+        clk => clock,
+        rst => reset,
+        Q => temp2
+    );
+
+    -- Istanza del terzo flip-flop D
+    FF3: d_flip_flop port map (
+        D => temp2,
+        clk => clock,
+        rst => reset,
+        Q => temp3
+    );
+
+    -- Istanza del quarto flip-flop D
+    FF4: d_flip_flop port map (
+        D => temp3,
+        clk => clock,
+        rst => reset,
+        Q => temp4
+    );
+
+    -- L'uscita y è il valore del quarto flip-flop
+    y <= temp4;
+
+end structural;
+

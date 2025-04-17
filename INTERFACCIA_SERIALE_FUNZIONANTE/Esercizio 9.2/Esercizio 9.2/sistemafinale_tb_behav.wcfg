@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="sistemafinale_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="sistemafinale_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="14,475 ps"></ZoomStartTime>
+      <ZoomEndTime time="19,176 ps"></ZoomEndTime>
+      <Cursor1Time time="20,000 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="115"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/sistemafinale_tb/output" type="array">
+      <obj_property name="ElementShortName">output[0:7]</obj_property>
+      <obj_property name="ObjectShortName">output[0:7]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_B/req" type="logic">
+      <obj_property name="ElementShortName">req</obj_property>
+      <obj_property name="ObjectShortName">req</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_B/ris" type="logic">
+      <obj_property name="ElementShortName">ris</obj_property>
+      <obj_property name="ObjectShortName">ris</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/read" type="logic">
+      <obj_property name="ElementShortName">read</obj_property>
+      <obj_property name="ObjectShortName">read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/TBE" type="logic">
+      <obj_property name="ElementShortName">TBE</obj_property>
+      <obj_property name="ObjectShortName">TBE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_B/rd_tmp" type="logic">
+      <obj_property name="ElementShortName">rd_tmp</obj_property>
+      <obj_property name="ObjectShortName">rd_tmp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/UCA/curr" type="other">
+      <obj_property name="ElementShortName">curr</obj_property>
+      <obj_property name="ObjectShortName">curr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_B/UCB/curr" type="other">
+      <obj_property name="ElementShortName">curr</obj_property>
+      <obj_property name="ObjectShortName">curr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/outputA" type="logic">
+      <obj_property name="ElementShortName">outputA</obj_property>
+      <obj_property name="ObjectShortName">outputA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/wr_tmp" type="logic">
+      <obj_property name="ElementShortName">wr_tmp</obj_property>
+      <obj_property name="ObjectShortName">wr_tmp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/en_tmp" type="logic">
+      <obj_property name="ElementShortName">en_tmp</obj_property>
+      <obj_property name="ObjectShortName">en_tmp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/conta" type="array">
+      <obj_property name="ElementShortName">conta[0:3]</obj_property>
+      <obj_property name="ObjectShortName">conta[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_B/cont/output" type="array">
+      <obj_property name="ElementShortName">output[0:3]</obj_property>
+      <obj_property name="ObjectShortName">output[0:3]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/outputROM" type="array">
+      <obj_property name="ElementShortName">outputROM[0:7]</obj_property>
+      <obj_property name="ObjectShortName">outputROM[0:7]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_B/memB/mem" type="array">
+      <obj_property name="ElementShortName">mem[0:3][0:7]</obj_property>
+      <obj_property name="ObjectShortName">mem[0:3][0:7]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/TXD" type="logic">
+      <obj_property name="ElementShortName">TXD</obj_property>
+      <obj_property name="ObjectShortName">TXD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/RDA" type="logic">
+      <obj_property name="ElementShortName">RDA</obj_property>
+      <obj_property name="ObjectShortName">RDA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/TBE" type="logic">
+      <obj_property name="ElementShortName">TBE</obj_property>
+      <obj_property name="ObjectShortName">TBE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/WR" type="logic">
+      <obj_property name="ElementShortName">WR</obj_property>
+      <obj_property name="ObjectShortName">WR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/tfSReg" type="array">
+      <obj_property name="ElementShortName">tfSReg[10:0]</obj_property>
+      <obj_property name="ObjectShortName">tfSReg[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/clkDiv" type="array">
+      <obj_property name="ElementShortName">clkDiv[9:0]</obj_property>
+      <obj_property name="ObjectShortName">clkDiv[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/ctRst" type="logic">
+      <obj_property name="ElementShortName">ctRst</obj_property>
+      <obj_property name="ObjectShortName">ctRst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/strCur" type="other">
+      <obj_property name="ElementShortName">strCur</obj_property>
+      <obj_property name="ObjectShortName">strCur</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/sttCur" type="other">
+      <obj_property name="ElementShortName">sttCur</obj_property>
+      <obj_property name="ObjectShortName">sttCur</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/strNext" type="other">
+      <obj_property name="ElementShortName">strNext</obj_property>
+      <obj_property name="ObjectShortName">strNext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/sttNext" type="other">
+      <obj_property name="ElementShortName">sttNext</obj_property>
+      <obj_property name="ObjectShortName">sttNext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/sistemafinale_tb/utt/entita_A/uartA/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+</wave_config>

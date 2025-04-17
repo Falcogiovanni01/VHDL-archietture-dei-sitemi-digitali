@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mauro/Desktop/CRONOMETRO/Cronometro/Cronometro.srcs/sources_1/new/Cronometro.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Cronometro'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mauro/Desktop/CRONOMETRO/Cronometro/Cronometro.srcs/sources_1/new/cont_mod_N.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'cont_mod_N'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mauro/Desktop/CRONOMETRO/Cronometro/Cronometro.srcs/sim_1/new/Cronometro_sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Cronometro_sim'

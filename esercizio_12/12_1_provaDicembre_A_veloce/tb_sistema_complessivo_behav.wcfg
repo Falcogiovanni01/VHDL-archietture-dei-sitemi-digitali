@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_sistema_complessivo_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_sistema_complessivo" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="3,156.000000001 ms"></ZoomEndTime>
+      <Cursor1Time time="0.000137500 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="157"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/tb_sistema_complessivo/CLK_A_tb" type="logic">
+      <obj_property name="ElementShortName">CLK_A_tb</obj_property>
+      <obj_property name="ObjectShortName">CLK_A_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CLK_B_tb" type="logic">
+      <obj_property name="ElementShortName">CLK_B_tb</obj_property>
+      <obj_property name="ObjectShortName">CLK_B_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CLK_A_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_A_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_A_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CLK_B_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_B_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_B_PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/RST_tb" type="logic">
+      <obj_property name="ElementShortName">RST_tb</obj_property>
+      <obj_property name="ObjectShortName">RST_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/start_tb" type="logic">
+      <obj_property name="ElementShortName">start_tb</obj_property>
+      <obj_property name="ObjectShortName">start_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CUT/inst_SISTEMA_A/ROM_8_4/ROM_8_4" type="array">
+      <obj_property name="ElementShortName">ROM_8_4[0:7][3:0]</obj_property>
+      <obj_property name="ObjectShortName">ROM_8_4[0:7][3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CUT/inst_SISTEMA_A/CU/current_state" type="other">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+      <obj_property name="label">current_stateA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CUT/inst_SISTEMA_A/CU/next_state" type="other">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+      <obj_property name="label">next_stateA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CUT/inst_SISTEMA_B/CU/current_state" type="other">
+      <obj_property name="ElementShortName">current_state</obj_property>
+      <obj_property name="ObjectShortName">current_state</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CUT/inst_SISTEMA_B/CU/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CUT/inst_SISTEMA_B/ADDER/A" type="array">
+      <obj_property name="ElementShortName">A[3:0]</obj_property>
+      <obj_property name="ObjectShortName">A[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#0000FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CUT/inst_SISTEMA_B/ADDER/B" type="array">
+      <obj_property name="ElementShortName">B[3:0]</obj_property>
+      <obj_property name="ObjectShortName">B[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF00FF</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CUT/inst_SISTEMA_B/ACCUMULATORE/output" type="array">
+      <obj_property name="ElementShortName">output[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FF0000</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/output_finale_tb" type="array">
+      <obj_property name="ElementShortName">output_finale_tb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">output_finale_tb[3:0]</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_sistema_complessivo/CUT/inst_SISTEMA_B/overflow" type="logic">
+      <obj_property name="ElementShortName">overflow</obj_property>
+      <obj_property name="ObjectShortName">overflow</obj_property>
+      <obj_property name="CustomSignalColor">#FFFF00</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+</wave_config>

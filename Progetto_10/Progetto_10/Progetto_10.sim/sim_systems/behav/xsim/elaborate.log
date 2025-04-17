@@ -1,0 +1,28 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot system_ab_tb_behav xil_defaultlib.system_ab_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.ROM_8x8 [rom_8x8_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit_a [control_unit_a_default]
+Compiling architecture behavioral of entity xil_defaultlib.gen_counter [\gen_counter(size=3,module=8)\]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider [\clock_divider(clock_frequency_o...]
+Compiling architecture behavioral of entity xil_defaultlib.Rs232RefComp [rs232refcomp_default]
+Compiling architecture structural of entity xil_defaultlib.system_a [system_a_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit_b [control_unit_b_default]
+Compiling architecture behavioral of entity xil_defaultlib.MEM [\MEM(mem_size=8,addr_size=3,data...]
+Compiling architecture structural of entity xil_defaultlib.system_b [system_b_default]
+Compiling architecture structural of entity xil_defaultlib.system [system_default]
+Compiling architecture system_ab of entity xil_defaultlib.system_ab_tb
+Built simulation snapshot system_ab_tb_behav

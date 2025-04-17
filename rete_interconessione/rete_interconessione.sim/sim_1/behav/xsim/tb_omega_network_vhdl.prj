@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../rete_interconessione.srcs/sources_1/new/control_unit.vhd" \
+"../../../../rete_interconessione.srcs/sources_1/new/omega_network.vhd" \
+"../../../../rete_interconessione.srcs/sim_1/new/tb_omega_network.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Thu Jan 12 13:00:54 2023
+# Process ID: 3032
+# Current directory: D:/Downloads/Esercizio 9.2/Esercizio 9.2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15172 D:\Downloads\Esercizio 9.2\Esercizio 9.2\Esercizio 9.2.xpr
+# Log file: D:/Downloads/Esercizio 9.2/Esercizio 9.2/vivado.log
+# Journal file: D:/Downloads/Esercizio 9.2/Esercizio 9.2\vivado.jou
+# Running On: LAPTOP-KSB2CCNQ, OS: Windows, CPU Frequency: 1498 MHz, CPU Physical cores: 4, Host memory: 16946 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Downloads/Esercizio 9.2/Esercizio 9.2/Esercizio 9.2.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="system_ab_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="system_ab_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="12,506,653.430 ns"></ZoomStartTime>
+      <ZoomEndTime time="12,506,752.852 ns"></ZoomEndTime>
+      <Cursor1Time time="12,506,670.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/system_ab_tb/STRT" type="logic">
+      <obj_property name="ElementShortName">STRT</obj_property>
+      <obj_property name="ObjectShortName">STRT</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_ab_tb/RST" type="logic">
+      <obj_property name="ElementShortName">RST</obj_property>
+      <obj_property name="ObjectShortName">RST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_ab_tb/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_ab_tb/SIG_A" type="logic">
+      <obj_property name="ElementShortName">SIG_A</obj_property>
+      <obj_property name="ObjectShortName">SIG_A</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_ab_tb/SIG_B" type="logic">
+      <obj_property name="ElementShortName">SIG_B</obj_property>
+      <obj_property name="ObjectShortName">SIG_B</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_ab_tb/SIG_ERR" type="logic">
+      <obj_property name="ElementShortName">SIG_ERR</obj_property>
+      <obj_property name="ObjectShortName">SIG_ERR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_ab_tb/sys/sysA/mem_rom/ROM" type="array">
+      <obj_property name="ElementShortName">ROM[7:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">ROM[7:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/system_ab_tb/sys/sysB/memory/data" type="array">
+      <obj_property name="ElementShortName">data[7:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="group40" type="group">
+      <obj_property name="label">CU_A</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/system_ab_tb/sys/sysA/cu_a/TBE" type="logic">
+         <obj_property name="ElementShortName">TBE</obj_property>
+         <obj_property name="ObjectShortName">TBE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysA/cu_a/start" type="logic">
+         <obj_property name="ElementShortName">start</obj_property>
+         <obj_property name="ObjectShortName">start</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysA/cu_a/clock" type="logic">
+         <obj_property name="ElementShortName">clock</obj_property>
+         <obj_property name="ObjectShortName">clock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysA/cu_a/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysA/cu_a/WR" type="logic">
+         <obj_property name="ElementShortName">WR</obj_property>
+         <obj_property name="ObjectShortName">WR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysA/cu_a/read" type="logic">
+         <obj_property name="ElementShortName">read</obj_property>
+         <obj_property name="ObjectShortName">read</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysA/cu_a/c_enable" type="logic">
+         <obj_property name="ElementShortName">c_enable</obj_property>
+         <obj_property name="ObjectShortName">c_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysA/cu_a/current_state" type="other">
+         <obj_property name="ElementShortName">current_state</obj_property>
+         <obj_property name="ObjectShortName">current_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysA/cu_a/next_state" type="other">
+         <obj_property name="ElementShortName">next_state</obj_property>
+         <obj_property name="ObjectShortName">next_state</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group53" type="group">
+      <obj_property name="label">CU_B</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/RDA" type="logic">
+         <obj_property name="ElementShortName">RDA</obj_property>
+         <obj_property name="ObjectShortName">RDA</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/OE" type="logic">
+         <obj_property name="ElementShortName">OE</obj_property>
+         <obj_property name="ObjectShortName">OE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/PE" type="logic">
+         <obj_property name="ElementShortName">PE</obj_property>
+         <obj_property name="ObjectShortName">PE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/FE" type="logic">
+         <obj_property name="ElementShortName">FE</obj_property>
+         <obj_property name="ObjectShortName">FE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/clock" type="logic">
+         <obj_property name="ElementShortName">clock</obj_property>
+         <obj_property name="ObjectShortName">clock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/reset" type="logic">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/c_enable" type="logic">
+         <obj_property name="ElementShortName">c_enable</obj_property>
+         <obj_property name="ObjectShortName">c_enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/RD" type="logic">
+         <obj_property name="ElementShortName">RD</obj_property>
+         <obj_property name="ObjectShortName">RD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/write" type="logic">
+         <obj_property name="ElementShortName">write</obj_property>
+         <obj_property name="ObjectShortName">write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/error" type="logic">
+         <obj_property name="ElementShortName">error</obj_property>
+         <obj_property name="ObjectShortName">error</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/current_state" type="other">
+         <obj_property name="ElementShortName">current_state</obj_property>
+         <obj_property name="ObjectShortName">current_state</obj_property>
+      </wvobject>
+      <wvobject fp_name="/system_ab_tb/sys/sysB/cu_b/next_state" type="other">
+         <obj_property name="ElementShortName">next_state</obj_property>
+         <obj_property name="ObjectShortName">next_state</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

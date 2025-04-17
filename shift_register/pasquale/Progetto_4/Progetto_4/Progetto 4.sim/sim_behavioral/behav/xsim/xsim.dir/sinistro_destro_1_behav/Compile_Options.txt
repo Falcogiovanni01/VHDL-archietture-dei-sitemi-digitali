@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "sinistro_destro_1_behav" "xil_defaultlib.sinistro_destro_1" -log "elaborate.log" 

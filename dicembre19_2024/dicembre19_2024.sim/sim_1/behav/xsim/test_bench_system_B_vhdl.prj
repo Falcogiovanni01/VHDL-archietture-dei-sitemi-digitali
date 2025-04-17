@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../dicembre19_2024.srcs/sources_1/new/B.vhd" \
+"../../../../dicembre19_2024.srcs/sources_1/new/adderCLA.vhd" \
+"../../../../dicembre19_2024.srcs/sources_1/new/cunitB.vhd" \
+"../../../../dicembre19_2024.srcs/sources_1/new/registro.vhd" \
+"../../../../dicembre19_2024.srcs/sim_1/new/test_bench_system_B.vhd" \
+
+# Do not sort compile order
+nosort
